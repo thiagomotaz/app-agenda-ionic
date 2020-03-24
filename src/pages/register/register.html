@@ -1,0 +1,32 @@
+<ion-content class="transparent-header">
+  <img class="logo" src="../../assets/imgs/logo.png" />
+  <form [formGroup]="form" (ngSubmit)="saveEntry()">
+  <div padding>
+    <ion-item>
+      <ion-input type="text" placeholder="Nome" [(ngModel)]="nome" formControlName="nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="email" placeholder="Email" [(ngModel)]="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Usuário" [(ngModel)]="loginx" formControlName="loginx"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Senha" [(ngModel)]="senha" formControlName="senha"></ion-input>
+    </ion-item>
+    <button ion-button block outline color="light" class="login-button"> Registrar</button>
+  </div>
+  </form>
+  <!-- <div class="strike">
+      <span>OU</span>
+    </div>
+    <button ion-button block clear (click)="login()" color="light" class="login-button"><ion-icon name="logo-facebook"></ion-icon> Login com facebook</button> -->
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="footer">
+    <div (click)="goToLogin()">
+      <span>Já tem uma conta?
+        <strong>Faça login</strong>.</span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

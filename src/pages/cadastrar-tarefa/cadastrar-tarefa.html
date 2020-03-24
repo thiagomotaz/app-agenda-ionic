@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ pageTitle }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div>
+    <ion-item *ngIf="isEdited && !hideForm">
+      <button ion-button item-right color="secondary" text-center block (click)="deleteEntry()">Remover tarefa</button>
+    </ion-item>
+
+    <div *ngIf="!hideForm">
+      <form [formGroup]="form" (ngSubmit)="saveEntry()">
+
+        <ion-list>
+          <ion-item-group>
+            <ion-item>
+              <ion-input type="text" formControlName="descricao" [(ngModel)]="descricao"></ion-input>
+            </ion-item>
+          </ion-item-group>
+
+
+          <ion-item>
+            <button ion-button color="primary" text-center block [disabled]="!form.valid">Salvar</button>
+          </ion-item>
+
+        </ion-list>
+
+      </form>
+    </div>
+  </div>
+
+</ion-content>

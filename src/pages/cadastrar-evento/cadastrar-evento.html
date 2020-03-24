@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ pageTitle }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content">
+
+  <ion-item *ngIf="isEdited && !hideForm">
+    <button ion-button item-right color="secondary" text-center block (click)="deleteEntry()">Remover tarefa</button>
+  </ion-item>
+
+  <div *ngIf="!hideForm">
+    <form [formGroup]="form" (ngSubmit)="saveEntry()">
+      <ion-list>
+        <ion-item>
+          <ion-input placeholder="Título" formControlName="titulo" [(ngModel)]="titulo"></ion-input>
+        </ion-item>
+        <ion-item text-wrap class="item-text-wrap">
+          <ion-textarea placeholder="Descriçao do evento" formControlName="descricao" [(ngModel)]="descricao"></ion-textarea>
+        </ion-item>
+        <ion-item>
+          <ion-input placeholder="Localizaçao" formControlName="localizacao" [(ngModel)]="localizacao"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <ion-list>
+        <ion-item>
+          <ion-label>Data</ion-label>
+          <ion-datetime displayFormat="DD MMM YYYY" formControlName="data" [(ngModel)]="data"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Hora</ion-label>
+          <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" formControlName="hora" [(ngModel)]="hora"></ion-datetime>
+        </ion-item>
+
+
+      </ion-list>
+
+
+      <ion-list>
+        <ion-item>
+          <button ion-button color="primary" text-center block [disabled]="!form.valid">Salvar</button>
+        </ion-item>
+      </ion-list>
+    </form>
+  </div>
+
+</ion-content>
+
+<style>
+  ion-list:first-child {
+    margin-top: 32px;
+  }
+
+  ion-list+ion-list {
+    margin-top: 0;
+  }
+</style>

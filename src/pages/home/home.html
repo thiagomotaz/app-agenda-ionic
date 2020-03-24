@@ -1,0 +1,62 @@
+<ion-header>
+  <!-- color="amarelo" -->
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Painel</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<!-- class="background" -->
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <!-- class=" but" color="amarelo" -->
+        <button ion-button outline icon-start style="width: 100%; text-transform:none" (click)="goToCadastrarHorariosPage()">
+          <ion-icon name="bookmark"></ion-icon>
+          Novo horário
+        </button>
+      </ion-col>
+
+      <ion-col>
+        <!-- class="but" color="amarelo" -->
+        <button ion-button outline icon-start style="width: 100%; text-transform:none" (click)="goToCadastrarTarefaPage()">
+          <ion-icon name="bookmarks"></ion-icon>
+          Nova tarefa
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <!-- class="but" color="amarelo" -->
+        <button ion-button outline icon-start style="width: 100%; text-transform:none" (click)="goToCadastrarEventoPage()">
+          <ion-icon name="wine"></ion-icon>
+          Novo evento
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-item-divider center color="luiza">
+      <ion-label style="text-align: center">Avisos</ion-label>
+    </ion-item-divider>
+    <br>
+    <ion-card>
+      <ion-item-divider color="primary">
+        <ion-label>Tarefas pendentes</ion-label>
+      </ion-item-divider>
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+          <ion-label>{{item.descricaoTarefa}}</ion-label>
+        </ion-item>
+        <button ion-button color="light2" outline icon-start style="width: 98.3%; text-transform:none" (click)="goToTarefasPage()">
+          <ion-icon name="ios-more" color="primary"></ion-icon>
+        </button>
+      </ion-list>
+    </ion-card>
+  </ion-grid>
+
+
+</ion-content>

@@ -1,0 +1,113 @@
+// import font
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700');
+// deixando a font global
+* {
+   font-family: 'Montserrat', sans-serif;
+}
+
+//fundos
+ .background{
+    background: $dark2
+ }
+ .backmenu{
+    background: $purple2
+ }
+//Font style
+.bold {
+   font-weight: 700
+}
+.light {
+   font-weight: 300
+}
+
+//Align
+.center {
+   text-align: center
+}
+
+.but{
+   font-weight: 700;
+   color: $amarelo2;
+   text-align: center
+}
+ .teste{
+    text-decoration-color: $dark2
+ }
+
+
+//  COISA INUTEIS
+// cores grupo 2
+  .purple2{
+     color:#702C91;
+ }
+ .cinza2{
+     $cinza2:      #BFBBBA;
+ }
+
+ .amarelo2{
+     $amarelo2:    #FDB813;
+
+ }
+ .dark2{
+     $dark2:       #4B4237;
+
+ }
+
+  // cores gerais
+  .green{
+     $green1:      #11be62;
+  }
+  .snow{
+     $snow:   #FAFAFA;
+  }
+
+  .blue{
+     $blue1:  #100797;
+  }
+//cores grupo 1
+ .purple1{
+     $purple1:     #6912db;
+ }
+ .cinza1{
+     $cinza1:      #999999;
+ }
+
+ .amarelo1{
+     $amarelo1:    #edc214;
+
+ }
+ .dark1{
+     $dark1:       #222;
+
+ }
+ // Material Design Sidemenu
+#menu-material {
+    .menu-header {
+      padding: 5px 15px;
+      background-image: url('https://scontent.fudi1-1.fna.fbcdn.net/v/t1.0-9/20994107_1426089187477854_2191633212200427607_n.jpg?_nc_cat=104&_nc_ht=scontent.fudi1-1.fna&oh=d897f948c38fed407ed41dd96d29661e&oe=5CB2755D');
+      background-size: 100% 160px;
+      color: white;
+      .name {
+        font-weight: 500;
+        margin-bottom: 3px;
+      }
+      .e-mail {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+    }
+    .user-avatar {
+      padding: .5em;
+      height: 12vh;
+    }
+    h3,
+    .label,
+    {
+      color: #999;
+      font-weight: 400;
+    }
+    ion-icon {
+      color: #777;
+    }
+  }
+  
