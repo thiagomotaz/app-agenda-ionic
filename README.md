@@ -3,6 +3,6 @@ Aplicativo desenvolvido em Ionic 3 (backend em PHP) com módulo de eventos, mód
 
 <img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/1.png" width="400" height="790">
 <img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/2.png" width="400" height="790">
-<img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/3.jpg" width="400" height="790">
-<img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/4.jpg" width="400" height="790">
-<img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/5.jpg" width="400" height="790">
+<img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/3.jpeg" width="400" height="790">
+<img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/4.jpeg" width="400" height="790">
+<img src="https://github.com/thiagomotax/app-agenda-ionic/blob/master/5.jpeg" width="400" height="790">
